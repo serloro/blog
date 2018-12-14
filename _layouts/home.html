@@ -1,14 +1,28 @@
 ---
 layout: default
 ---
+<html>
+    
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+<body>
 <div class="p-4 flex flex-items">
 
-        <img class="h-12 w-12 rounded-full"
-                src="https://darrenjameseeley.files.wordpress.com/2014/09/expendables3.jpeg"/>
-
-
-Tag: {{page.tag}}
-Contenido: {{ page.content }}
-
+        <b>Posts</b>
+        <ul>
+                {% for post in site.posts %}
+                  <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+        <b>Blog</b>
+        {% for blog in site.blogs %}
+        entra
+        <li>
+          <a href="{{ blog.url }}">{{ blog.title }}</a>
+        </li>
+        {% endfor %}
 
 </div>
+</body>
+</html>
