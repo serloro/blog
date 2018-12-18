@@ -1,6 +1,10 @@
 ---
-  title: links interesantes
---
+layout: post
+title:  "Enlaces vuepress"
+date:   2018-12-13 20:52:24 +0100
+categories: vuepress
+---
+
 Pagina oficial:
 https://vuepress.vuejs.org/guide/getting-started.html
 
