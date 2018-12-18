@@ -14,3 +14,6 @@ https://styde.net/generar-sitios-estaticos-con-vuepress-y-vue-js/
 
 Blogs en inglés:
 https://scifabric.com/blog/2017/10/13/jekyll-vuejs-bulma.html
+
+Vuepress + tailwind css
+https://dev.to/vuevixens/build-a-beautiful-website-with-vuepress-and-tailwindcss--3a03
