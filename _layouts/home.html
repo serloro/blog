@@ -1,28 +1,55 @@
 ---
 layout: default
 ---
-<html>
-    
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-<body>
-<div class="p-4 flex flex-items">
-
-        <b>Posts</b>
-        <ul>
-                {% for post in site.posts %}
-                  <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-        <b>Blog</b>
-        {% for blog in site.blogs %}
-        entra
-        <li>
-          <a href="{{ blog.url }}">{{ blog.title }}</a>
-        </li>
-        {% endfor %}
-
+<div class="w-auto p-10 rounded-lg m-4">
+  <p>
+    Página personal que contiene todo sobre mi: blog, noticias, otras páginas, currículum, etc....
+  </p>
+  <p>
+    Dividido en varios apartados blablalbalb
+  </p>
 </div>
-</body>
-</html>
+
+  <div class="flex w-full">
+      <div class="w-1/2 m-4 ">
+          <div class="header p-2 bg-red-light  rounded-t-lg">
+              <b4>Blog noticias</b4>
+          </div>
+          <div class="border p-4">
+              Noticias sobre diversos temas relacionados principalmente con la informática. Últimos artículos publicados:
+              <ul>
+                <li>Noti 1</li>
+                <li>Noti 2</li>
+                <li>Noti 3</li>
+              </ul>
+          </div>
+      </div>
+      <div class="w-1/2 m-4 p-2">
+        <div class="header p-2 bg-grey-dark  rounded-t-lg">
+            <b4>APPs publicadas</b4>
+        </div>
+        <div class="border p-4">
+            Pendiente....
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div class="flex w-full">
+        <div class="w-full m-14 p-12">
+        <div class="header p-2 bg-yellow-light  rounded-t-lg">
+            <b4>BLOGS</b4>
+        </div>
+        <div class="border p-4">
+            Noticias sobre diversos temas relacionados principalmente con la informática. Últimos artículos publicados:
+            <ul>
+              <li>Noti 1</li>
+              <li>Noti 2</li>
+              <li>Noti 3</li>
+            </ul>
+        </div>
+      </div>
+      
+    </div>
+</div>

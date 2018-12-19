@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="p-4 flex flex-items">
+        URL : {{ page.url }}
+        <br /><br />
+        <b>Posts</b>
+        <ul>
+                {% for post in site.posts %}
+                  <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+        <br /><br />
+        <b>Blog</b>
+        {% for blog in site.blogs %}
+        entra
+        <li>
+          <a href="{{ blog.url }}">{{ blog.title }}</a>
+        </li>
+        {% endfor %}
+
+        <br /><br /><br />
+        {{content}}
+</div>
