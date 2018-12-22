@@ -16,8 +16,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 <html>
-  <body>
-         <div class="flex h-full">
+  <body class="font-sans">
+         <div class="flex h-full" style="font-size:10pt">
                 <header class="w-64 bg-black text-white h-screen">
                       <div class="w-full">
                           <div class="mt-8 text-center">
@@ -31,8 +31,8 @@
                               <div class="mt-6 px-4 mb-2 flex justify-between items-center">
                                   <div class="opacity-75">AREA PERSONAL</div>
                               </div>
-                              <div class="{% if page.url == '/' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-blog" style="color:blue"></i><span class="ml-2">Blog</span></div>
-                              <div class="{% if page.url == '/blog' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-scroll"></i><span class="ml-2">Currículum</span></div>
+                              <div class="{% if page.url == '/' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-home" style="color:blue"></i><span class="ml-2">Home</span></div>
+                              <div class="{% if page.url == '/curriculum' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-scroll"></i><span class="ml-2">Currículum</span></div>
                               <div class="{% if page.url == '/news' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-newspaper"></i><span class="ml-2">Últimas noticias</span></div>
                           </div>
                           <div class="mb-8">
@@ -46,6 +46,9 @@
                               <div class="py-2 px-4 ">
                                 <img src="./img/nuxt.png" class="w-6 "></img>
                                 NUXT</div>
+                                <div class="py-2 px-4 ">
+                                        <img src="./img/nuxt.png" class="w-6 "></img>
+                                        VuePress</div>
                               <div class="py-2 px-4 ">
                                     <img src="./img/tailwindcss.png" class="w-6 "></img>
                                     Tailwind css</div>
@@ -62,7 +65,7 @@
           
           
             </header>
-            <div class="w-screen bg-grey-lighter">
+            <div class="w-screen bg-grey-lighter"  style="font-size:12pt">
                   
                   {{content}}
 
