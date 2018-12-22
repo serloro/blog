@@ -1,5 +1,8 @@
 ---
-
+layout: post
+title:  "Pureba blog!"
+date:   2018-12-13 20:52:24 +0100
+categories: flutter
 ---
 Links interesantes de flutter:
 
