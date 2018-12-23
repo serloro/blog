@@ -3,25 +3,25 @@ layout: default
 ---
 <div class="w-auto p-10 rounded-lg m-4">
   <p>
-    Página personal que contiene todo sobre mi: blog, noticias, otras páginas, currículum, etc....
-  </p>
-  <p>
-    Dividido en varios apartados blablalbalb
+    <h3>Bienvenidos a la página principal de developer valencia en donde podrás leer la última información de los artículos más innovadores del mundo de la informática.</h3>
   </p>
 </div>
+ 
 
   <div class="flex w-full">
-      <div class="w-1/2 m-4 ">
+    <div class="w-1/2 m-4 ">
           <div class="header p-2 bg-red-light  rounded-t-lg">
               <b4>Blog noticias</b4>
           </div>
-          <div class="border p-4">
+          <div class="border p-4 ">
               Noticias sobre diversos temas relacionados principalmente con la informática. Últimos artículos publicados:
-              <ul>
-                <li>Noti 1</li>
-                <li>Noti 2</li>
-                <li>Noti 3</li>
-              </ul>
+              <ul class="mt-2">
+                  {% for post in site.posts %}
+                    <li>
+                      <img src="{{post.image}}" width="20px" /><a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
           </div>
       </div>
       <div class="w-1/2 m-4 p-2">
