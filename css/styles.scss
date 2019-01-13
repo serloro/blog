@@ -74,6 +74,10 @@
     }
   }
 
+  .headerSecciones {
+    @apply hidden;
+  }
+
   .headerSeccion {
     @apply mb-2 mt-3;
   }
@@ -90,6 +94,10 @@
 
     .marco {
       @apply flex h-full m-0;
+    }
+
+    .headerSecciones {
+      @apply inline;
     }
 
     header {

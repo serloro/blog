@@ -636,6 +636,10 @@ header div {
   border-color: #fff;
 }
 
+.headerSecciones {
+  display: none;
+}
+
 .headerSeccion {
   margin-bottom: .5rem;
   margin-top: .75rem;
@@ -661,6 +665,10 @@ header div {
     display: flex;
     height: 100%;
     margin: 0;
+  }
+
+  .headerSecciones {
+    display: inline;
   }
 
   header {
