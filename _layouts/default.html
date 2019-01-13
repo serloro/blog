@@ -11,7 +11,21 @@
     <meta property="og:site_name" content="Blog personal" />
     <title>Blog personal</title>
 </head>
+<script type="text/javascript">
+    var contraido = true;
+    function contraer() {
+        alert("entra");
+        var div = document.getElementById("headerSecciones");
+        debugger;
+        if (contraido) {
+            div.style.display = "";
+        } else {
+            div.style.display = "none";
+        }
 
+        contraido = !contraido; 
+    }
+</script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 <link href="./css/styles.css" rel="stylesheet">
 <html>
@@ -28,10 +42,10 @@
                                         <span>Programador VLC</span>
                                 </div>
                                 <div class="headerHamburguesa">
-                                        <button class="buttonHamburguesa"><a class="fa fa-grip-lines"></a></button>
+                                        <button class="buttonHamburguesa" onclick="contraer()"><a class="fa fa-grip-lines"></a></button>
                                 </div>
                             </div>
-                          <div class="headerSecciones">
+                          <div id="headerSecciones" class="headerSecciones">
                           <div class="headerSeccion">
                               <div class="headerSeccionTitulo"> 
                                   <div class="opacity-75">AREA PERSONAL</div>
