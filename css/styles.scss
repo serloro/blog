@@ -1,0 +1,153 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+ @tailwind preflight;
+
+ /**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+ @tailwind components;
+ 
+ /**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+ 
+  .sidebarOptions{
+    transition: background-color 0.5s ease;
+  }
+
+  .sidebarOptions:hover {
+      background-color:red;
+  }
+
+  header {
+    @apply flex items-center justify-between flex-wrap w-full bg-black text-white;
+  }
+
+  header div {
+    @apply w-full;
+  }
+
+  .headerNombre {
+    @apply pt-4;
+  }
+
+  .headerPerfil {
+    @apply inline-flex align-middle text-left pt-8 pl-6 mb-4;
+  }
+
+  .headerHamburguesa {
+    @apply visible pt-4 pr-4;
+  }
+
+  .buttonHamburguesa {
+    @apply float-right flex items-center px-3 py-2 border rounded text-grey-lighter border-grey-light;
+  }
+
+  @variants hover, focus {
+    .buttonHamburguesa {
+      @apply text-white border-white;
+    }
+  }
+
+  .headerSeccion {
+    @apply mb-2 mt-3;
+  }
+  
+  .headerSeccionTitulo {
+    @apply px-4 mb-2 justify-between items-center;
+  }
+
+  .headerSeccionElementos {
+    @apply py-2 px-4;
+  }
+
+  @screen md {
+
+    .marco {
+      @apply flex h-full m-0;
+    }
+
+    header {
+      @apply w-64 bg-black h-screen p-0;
+    }
+
+    header div {
+      @apply w-full;
+    }
+
+    .headerNombre {
+      @apply pt-0;
+    }
+
+    .headerPerfil {
+      @apply block pt-0 pl-0 mb-0;
+    }
+
+    .headerImg {
+      @apply mt-8 text-center;
+    }
+    .headerNombre {
+      @apply mb-8 text-center;
+    }
+    
+    .headerSeccion {
+      @apply mb-6 mt-1;
+    }
+
+    .headerSeccionTitulo {
+      @apply px-4 mb-2 flex justify-between items-center;
+    }
+
+    .headerHamburguesa {
+      @apply invisible pt-0;
+    }
+  }
+ /**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+ @tailwind utilities;
+ 
+ /**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  */

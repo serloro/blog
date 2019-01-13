@@ -10,64 +10,63 @@
     <meta property="og:description" content="Blog personal realizado en jekyll." />
     <meta property="og:site_name" content="Blog personal" />
     <title>Blog personal</title>
-    <style>
-        .sidebarOptions{
-            transition: background-color 0.5s ease;
-        }
-        .sidebarOptions:hover {
-            background-color:red;
-        }
-    </style>
 </head>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+<link href="./css/styles.css" rel="stylesheet">
 <html>
   <body class="font-sans">
-         <div class="flex h-full" style="font-size:10pt">
-                <header class="w-64 bg-black text-white h-screen">
-                      <div class="w-full">
-                          <div class="mt-8 text-center">
-                                    <img class="h-12 w-12 rounded-full"
-                                         src="https://darrenjameseeley.files.wordpress.com/2014/09/expendables3.jpeg"/>
-                          </div>
-                          <div class="mb-8 text-center">
-                                <span>Sergio López</span>
+         <div class="marco" style="font-size:10pt">
+                <header>
+                      <div>
+                          <div class="headerPerfil">
+                                <div class="headerImg">
+                                            <img class="h-12 w-12 rounded-full"
+                                                src="https://darrenjameseeley.files.wordpress.com/2014/09/expendables3.jpeg"/>
+                                </div>
+                                <div class="headerNombre"> 
+                                        <span>Programador VLC</span>
+                                </div>
+                                <div class="headerHamburguesa">
+                                        <button class="buttonHamburguesa"><a class="fa fa-grip-lines"></a></button>
+                                </div>
                             </div>
-                            <div class="mb-6">
-                              <div class=" mt-6 px-4 mb-2 flex justify-between items-center"> 
+                          <div class="headerSecciones">
+                          <div class="headerSeccion">
+                              <div class="headerSeccionTitulo"> 
                                   <div class="opacity-75">AREA PERSONAL</div>
                               </div>
                               <div class="sidebarOptions {% if page.url == '/' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-home" style="color:blue"></i><span class="ml-2">Home</span></div>
                               <div class="sidebarOptions {% if page.url == '/curriculum' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-scroll"></i><span class="ml-2">Currículum</span></div>
                               <div class="sidebarOptions {% if page.url == '/news' %}border-l-2 border-blue bg-grey-darkest text-grey{% endif %} py-2 px-4"><i class="fa fa-newspaper"></i><span class="ml-2">Últimas noticias</span></div>
                           </div>
-                          <div class="mb-8">
-                              <div class="px-4 mb-2 flex justify-between items-center">
+                          <div class="headerSeccion">
+                              <div class="headerSeccionTitulo">
                                   <div class="opacity-75">Blogs</div>
                               </div>
                               <div class="sidebarOptions {% if page.url == '/jekyll' %}border-l-2 border-blue bg-grey-lightest {% endif %} py-2 px-4"><img src="./img/jekyll.png" class="w-6 "></img>
                                 Jekyll</div>
-                              <div class="sidebarOptions py-2 px-4 "><img src="./img/zk.png" class="w-6 "></img>
+                              <div class="sidebarOptions headerSeccionElementos "><img src="./img/zk.png" class="w-6 "></img>
                                 ZK Framework</div>
-                              <div class="sidebarOptions py-2 px-4 ">
+                              <div class="sidebarOptions headerSeccionElementos ">
                                 <img src="./img/nuxt.png" class="w-6 "></img>
                                 NUXT</div>
-                                <div class="sidebarOptions py-2 px-4 ">
+                                <div class="sidebarOptions headerSeccionElementos ">
                                         <img src="./img/nuxt.png" class="w-6 "></img>
                                         VuePress</div>
-                                <div class="sidebarOptions py-2 px-4 ">
+                                <div class="sidebarOptions headerSeccionElementos ">
                                         <img src="./img/tailwindcss.png" class="w-6 "></img>
                                         Tailwind css</div>
                               </div>
                           
-                          <div class="mb-8">
-                                <div class="px-4 mb-2 flex justify-between items-center">
+                          <div class="headerSeccion">
+                                <div class="headerSeccionTitulo">
                                     <div class="opacity-75">APPs</div>
                                 </div>
-                                <div class="py-2 px-4 ">Sin Apps</div>
+                                <div class="headerSeccionElementos">Sin Apps</div>
                                 
                             </div>
+                        </div>
                       </div>
           
           
