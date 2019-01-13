@@ -14,13 +14,12 @@
 <script type="text/javascript">
     var contraido = true;
     function contraer() {
-        alert("entra");
         var div = document.getElementById("headerSecciones");
         debugger;
         if (contraido) {
-            div.style.display = "";
+            div.className = "headerSeccionesS";
         } else {
-            div.style.display = "none";
+            div.className = "headerSecciones";
         }
 
         contraido = !contraido; 
