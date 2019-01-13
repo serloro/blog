@@ -603,6 +603,7 @@ header div {
 
 .headerHamburguesa {
   visibility: visible;
+  padding-top: .25rem;
   padding-right: 1rem;
 }
 
